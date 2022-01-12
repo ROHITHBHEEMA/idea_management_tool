@@ -209,9 +209,9 @@ export default class AllBuckets extends Component {
     return (
       <DragDropContext onDragEnd={this.handleOnDragEnd}>
         <div className="container-fluid">
-          <Button
+          <Button style={{backgroundColor:"black"}}
             id="add-btn"
-            color="warning"
+
             size="sm"
             onClick={this.toggleModal}
           >

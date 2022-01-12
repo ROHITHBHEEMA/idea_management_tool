@@ -30,17 +30,17 @@ class Main extends Component {
   render() {
     return (
         <div className="container-fluid">
-        <Navbar collapseOnSelect expand="lg">
-          <Container>
-            <Navbar.Brand style={{ color: "black" }} className="header">Idea Management Tool</Navbar.Brand>
-            <Nav></Nav>
-            <Nav >
-              <Button
-              style={{ backgroundColor: "black", border:"none" }}
-              onClick={this.toggleShowGroupData}
-              >
-              Group Highlights
-               </Button>
+          <Navbar collapseOnSelect expand="lg">
+            <Container>
+              <Navbar.Brand style={{ color: "black" }} className="header">Idea Management Tool</Navbar.Brand>
+              <Nav></Nav>
+              <Nav >
+                <Button
+                    style={{ backgroundColor: "black", border:"none" }}
+                    onClick={this.toggleShowGroupData}
+                >
+                  Group Highlights
+                </Button>
 
                 <Nav.Link >
                   <Button color="link" className="zoomout" onClick={this.handleZoomOut} style={{backgroundColor:"transparent",border:"none" }}>
@@ -54,44 +54,13 @@ class Main extends Component {
                   </Button>
                 </Nav.Link>
               </Nav>
-          </Container>
-        </Navbar>
+            </Container>
+          </Navbar>
 
-    <AllBuckets showGroupedData={this.state.showGroupedData} />
-    </div>
+          <AllBuckets showGroupedData={this.state.showGroupedData} />
+        </div>
 
-      //
-      // <div className="container-fluid">
-      //   <Navbar light expand="md">
-      //     <NavbarBrand style={{ color: "black" }} className="header">
-      //       Idea Management Tool
-      //     </NavbarBrand>
-      //
-      //     <Nav navbar>
-      //       <Button
-      //         style={{ backgroundColor: "black" }}
-      //         onClick={this.toggleShowGroupData}
-      //       >
-      //         Group Highlights
-      //       </Button>
-      //     </Nav>
-      //
-      //
-      //     <NavbarText>
-      //       <Button color="link" className="zoomin" onClick={this.handleZoomIn} >
-      //         <span className="fa fa-search-plus fa-lg"></span>
-      //       </Button>
-      //     </NavbarText>
-      //
-      //     <NavbarText>
-      //       <Button color="link" className="zoomout" onClick={this.handleZoomOut}>
-      //         <span className="fa fa-search-minus fa-lg"></span>
-      //       </Button>
-      //     </NavbarText>
-      //
-      //   </Navbar>
-      //   <AllBuckets showGroupedData={this.state.showGroupedData} />
-      // </div>
+
     );
   }
 }

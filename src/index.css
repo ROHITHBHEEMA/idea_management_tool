@@ -1,7 +1,10 @@
 
 *:focus {
-  outline: 0 !important;
+  border: none !important;
+  outline: none !important;
 }
+
+
 
 body {
   margin: 0;
@@ -10,6 +13,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /*font-family: 'Inria Serif', serif !important;*/
+
+  /*font-family: 'Inria Serif', serif;*/
+  font-family: 'Roboto Mono', monospace !important;
 }
 
 code {

@@ -72,10 +72,10 @@ class IdeaModal extends Component {
       color: this.state.color,
     };
     this.props.addNoteToBucket(
-      this.state.selectedBucketId !== "new"
-        ? this.state.selectedBucketId
-        : this.state.newBucketId,
-      note
+        this.state.selectedBucketId !== "new"
+            ? this.state.selectedBucketId
+            : this.state.newBucketId,
+        note
     );
     this.setState({
       name: "",
@@ -98,106 +98,106 @@ class IdeaModal extends Component {
       return <option key={note.id}>{note.id}</option>;
     });
     return (
-      <React.Fragment>
-        <Modal isOpen={this.props.open} toggle={this.props.toggleModal}>
-          <ModalHeader toggle={this.props.toggleModal}>
-            Post Idea
-          </ModalHeader>
-          <ModalBody>
-            <Form>
-              <FormGroup row>
-                <Label htmlFor="name" md={3}>
-                  Name
-                </Label>
-                <Col md={6}>
-                  <Input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Enter Name"
-                    value={this.state.name}
-                    onChange={this.handleInputChange}
-                  />
-                </Col>
-              </FormGroup>
-              <FormGroup row>
-                <Label htmlFor="bucket" md={3}>
-                  Select Bucket
-                </Label>
-                <Col md={6}>
-                  <Input
-                    type="select"
-                    name="selectedBucketId"
-                    id="selectedBucketId"
-                    value={this.state.selectedBucketId}
-                    onChange={this.handleInputChange}
-                  >
-                    <option value="new">Create New Bucket</option>
-                    {list}
-                  </Input>
-                </Col>
-              </FormGroup>
-              {this.state.createNewBucket && (
-                <Col md={12} style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                }}>
-                  <FormGroup row>
+        <React.Fragment>
+          <Modal isOpen={this.props.open} toggle={this.props.toggleModal}>
+            <ModalHeader toggle={this.props.toggleModal}>
+              Post Idea
+            </ModalHeader>
+            <ModalBody>
+              <Form>
+                <FormGroup row>
+                  <Label htmlFor="name" md={3}>
+                    Name
+                  </Label>
+                  <Col md={6}>
                     <Input
-                      type="text"
-                      id="newBucketId"
-                      name="newBucketId"
-                      placeholder="Enter Bucket Name"
-                      value={this.state.newBucketId}
-                      onChange={this.handleInputChange}
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter Name"
+                        value={this.state.name}
+                        onChange={this.handleInputChange}
                     />
-                  </FormGroup>
-                </Col>
-              )}
-              <FormGroup row>
-                <Label htmlFor="body" md={3}>
-                  Body
-                </Label>
-                <Col md={6}>
-                  <Input
-                    type="textarea"
-                    id="body"
-                    name="body"
-                    rows="3"
-                    value={this.state.body}
-                    onChange={this.handleInputChange}
-                  />
-                </Col>
-              </FormGroup>
-              <FormGroup row>
-                <Label htmlFor="color" md={3}>
-                  Page Color
-                </Label>
-                <Col md={2}>
-                  <Input
-                    type="color"
-                    id="color"
-                    name="color"
-                    value={this.state.color}
-                    onChange={this.handleInputChange}
-                  />
-                </Col>
-              </FormGroup>
-            </Form>
-            <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}>
-              <Button type="submit"  style={{ backgroundColor: "black" , color:"white"}} onClick={this.handleSubmit}>
-                Add Highlight
-              </Button>
-            </div>
+                  </Col>
+                </FormGroup>
+                <FormGroup row>
+                  <Label htmlFor="bucket" md={3}>
+                    Select Bucket
+                  </Label>
+                  <Col md={6}>
+                    <Input
+                        type="select"
+                        name="selectedBucketId"
+                        id="selectedBucketId"
+                        value={this.state.selectedBucketId}
+                        onChange={this.handleInputChange}
+                    >
+                      <option value="new">Create New Bucket</option>
+                      {list}
+                    </Input>
+                  </Col>
+                </FormGroup>
+                {this.state.createNewBucket && (
+                    <Col md={12} style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                    }}>
+                      <FormGroup row>
+                        <Input
+                            type="text"
+                            id="newBucketId"
+                            name="newBucketId"
+                            placeholder="Enter Bucket Name"
+                            value={this.state.newBucketId}
+                            onChange={this.handleInputChange}
+                        />
+                      </FormGroup>
+                    </Col>
+                )}
+                <FormGroup row>
+                  <Label htmlFor="body" md={3}>
+                    Body
+                  </Label>
+                  <Col md={6}>
+                    <Input
+                        type="textarea"
+                        id="body"
+                        name="body"
+                        rows="3"
+                        value={this.state.body}
+                        onChange={this.handleInputChange}
+                    />
+                  </Col>
+                </FormGroup>
+                <FormGroup row>
+                  <Label htmlFor="color" md={3}>
+                    Page Color
+                  </Label>
+                  <Col md={2}>
+                    <Input
+                        type="color"
+                        id="color"
+                        name="color"
+                        value={this.state.color}
+                        onChange={this.handleInputChange}
+                    />
+                  </Col>
+                </FormGroup>
+              </Form>
+              <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}>
+                <Button type="submit"  style={{ backgroundColor: "black" , color:"white"}} onClick={this.handleSubmit}>
+                  Add Highlight
+                </Button>
+              </div>
 
-          </ModalBody>
-        </Modal>
-      </React.Fragment>
+            </ModalBody>
+          </Modal>
+        </React.Fragment>
     );
   }
 }

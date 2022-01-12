@@ -1,10 +1,10 @@
 body {
   /*background-color: #d3e3f3;*/
   /*background-color: #EEF2F7;*/
-  /*background-color: #f5e59d;*/
+  background-color: #f6f7be;
   /*background: linear-gradient(#9dd6f5,white) fixed;*/
 
-    background: linear-gradient(#060b57,white) fixed;
+    /*background: linear-gradient(#060b57,white) fixed;*/
 }
 
 #add-btn {
@@ -13,7 +13,7 @@ body {
 
 .fa-trash,
 .fa-pencil {
-  color: brown;
+  color: black;
   float: right;
 }
 
@@ -66,7 +66,7 @@ body {
 }
 
 .note-head {
-  background-color: grey;
+  background-color: black;
   padding: 3px;
   color: white;
   border-radius: 3px;
