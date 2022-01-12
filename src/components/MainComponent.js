@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import AllBuckets from "./AllBuckets";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { Navbar, NavbarBrand, Nav, Button,NavbarText } from "reactstrap";
 
-import { Navbar,Container,Nav,NavDropdown,Button } from 'react-bootstrap';
+import { Navbar,Container,Nav,Button } from 'react-bootstrap';
 
 class Main extends Component {
   constructor(props) {

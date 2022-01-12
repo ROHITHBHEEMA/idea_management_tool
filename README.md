@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Idea-Management-Tool
+Idea management is a practice used to organize insights. It allows large numbers of sticky notes (aka highlights) to be freely combined and sorted into clusters (aka groups) based on their natural relationships.<br />
+Checkout the video demo <a href="#"> Here</a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="./images/1.png" />
+Notes without grouping based on similar buckets.
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+<img src="./images/2.png" />
+Grouping them based on similar buckets.
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img src="./images/3.png" />
+Draging them to change buckets.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br>
 
-### `npm test`
+<img src="./images/4.png" />
+By clicking Ctrl + selecting the notes and then enter we can create the new buckets.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br>
 
-### `npm run build`
+<img src="./images/5.png" />
+By clicking on zoom in button we can zoom in the page similarrly we can zoom out them.
+<br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Link To Website
+Checkout the Website <a href="https://idea-management-tool-rohith.herokuapp.com/">here</a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Instructions & Features
 
-### `npm run eject`
+- Add/Remove/Edit highlights
+- Create buckets to group highlights in
+- Group highlights into buckets
+- Move highlights from one bucket to another.
+- Zoom in/Zoom out of the whiteboard, resizing the Idea management tool components themselves.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Setting up Locally
+- First clone the repo by using git clone link...
+- Then do npm install to install all the dependencies.
+- Then start the server by using npm start.
+- Then we can see the website at localhost:3000 
